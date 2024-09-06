@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Fashioniesta</title>
+    <!-- third-party css coming soon -->
+    <!-- link with css using relative path -->
+     <!-- external css connection -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup-form.css">
+    <script type="module">
+      import svgIconsbootstrap from 'https://cdn.jsdelivr.net/npm/@svg-icons/bootstrap@1.87.0/+esm'
+      </script>
+    <!-- link with css using absoulte path which is not recommended -->
+    <!-- <link rel="stylesheet" href="C:/Users/sbegam/OneDrive - TNO/Documents/July-Coding-Team/files/day5/css/style.css"> -->
+</head>
+
+<body>
+
+     <!-- This is the site navigation part. Will add Logo and css -->
+     <nav class="navContainer">
+
+       
+        <img class="siteLogo" src="assets\fashion-logo.png" alt="site Logo" >
+        <a href="index.html">HOME</a>
+      
+        <a href="men.html">MEN</a>
+        <a href="girls.html">GIRLS</a>
+       
+        <a href="index.html#about">ABOUT US</a>
+        <a href="index.html#contact">CONTACT US</a>
+        <a class="dealMenu" href="index.html#deal">TODAY'S DEAL</a>
+
+        <a href="signup.html" style="float: right; margin-right: 5%;">SIGN UP</a>
+        <a href="login.html" style="float: right;margin-right: 5%;">LOG IN</a>
+      
+        
+    </nav>
+ 
+
+    <main>
+       
+        <form id="formSettings" name="myform" class="cformSettings" action="signup.html" onsubmit="return validate()"  >
+            <h4 class="childTitle">SIGN UP FORM</h4><br>
+            <label for="u_fname">Enter your First name</label><br>
+            <input type="text" name="user_fname" id="u_fname" ><br>
+            <label for="u_lname">Enter your Last name</label><br>
+            <input type="text" name="user_lname" id="u_lname"><br>
+            <label for="u_email">Enter your email</label><br>
+            <input type="email" name="user_email" id="u_email"><br>
+            <label for="u_pwd">Enter your pwd</label><br>
+            <input type="password" name="user_pwd" id="u_pwd"><br>
+            <input type="submit" value="Register">
+            <div id="errorMsg" ></div><br>
+        </form>
+        <!-- <script>
+            validate = () =>{
+                let isValid = true;
+                let errorMsgs = [];// empty array
+                //Identifying the element and getting the value
+                const user_fname = document.getElementById("u_fname").value;
+                const user_lname = document.getElementById("u_lname").value;
+                const user_email = document.getElementById("u_email").value;
+                const user_pwd = document.getElementById("u_pwd").value;
+                const error_msg = document.getElementById("errorMsg");
+                //error message 
+                error_msg.innerHTML="";
+                error_msg.style.backgroundColor="yellow";
+                error_msg.style.color="red";
+
+                //name validation
+                //trim()- predefined function - it has to include()
+                if(user_fname.trim() === ''){
+                    isValid = false;
+                    errorMsgs.push("First name is required!"); // created a error message in array
+                    
+                }
+                if(user_lname.trim() === ''){
+                    isValid = false;
+                    errorMsgs.push("Last name is required!");
+                }
+
+                //email regEX pattern
+                const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+
+                if(!emailPattern.test(user_email)){
+                    isValid = false;
+                    errorMsgs.push("Enter a valid email!"); 
+                }
+
+                // Password length validation
+                if (user_pwd.length < 8) {
+                           isValid = false;
+                           errorMsgs.push('Password must be at least 8 characters long.');
+                  }
+
+                  // Uppercase letter validation
+                 const upperCasePattern = /[A-Z]/;// creating pattern using RegEx and comparing with created element related variable
+                 if (!upperCasePattern.test(user_pwd)) {
+                           isValid = false;
+                           errorMsgs.push('Password must contain at least one uppercase letter.');
+                 } 
+
+                  // Lowercase letter validation
+                  const lowerCasePattern = /[a-z]/;
+                  if (!lowerCasePattern.test(user_pwd)) {
+                      isValid = false;
+                      errorMsgs.push('Password must contain at least one lowercase letter.');
+                  }
+
+                  // Digit validation
+                  const digitPattern = /[0-9]/;
+                  if (!digitPattern.test(user_pwd)) {
+                      isValid = false;
+                      errorMsgs.push('Password must contain at least one number.');
+                  }
+
+                  // Special character validation
+                  const specialCharPattern = /[!@#$%^&*(),.?":{}|<>]/;
+                  if (!specialCharPattern.test(user_pwd)) {
+                      isValid = false;
+                      errorMsgs.push('Password must contain at least one special character.');
+                  }
+
+                //pass the error message to dedicated error message element
+                if(!isValid){
+                    error_msg.innerHTML = errorMsgs.join('<br>');
+                }
+
+
+            return isValid;
+            }
+        </script> -->
+    </main>
+
+
+    <footer id="footer" class="foot footContainer">
+    
+        &copy; Copyright <span class="footerHeart">&hearts;</span> TNO July Coding Team 2024. 
+        <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://linkedin.com/ " target="_blank"><i class="bi bi-linkedin"></i></a>
+
+       <br><br>
+         <a class="logoCopyright" href='https://pngtree.com/freepng/vector-hanger-icon_4101459.html'>png image from pngtree.com/</a>
+    </footer>
+    <!-- external javascript conncetion link -->
+  <script src="js\script.js"></script>
+    
+</body>
+</html>

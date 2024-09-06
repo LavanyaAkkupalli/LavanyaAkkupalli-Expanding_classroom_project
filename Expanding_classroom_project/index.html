@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Fashioniesta</title>
+    <!-- third-party css coming soon -->
+    <!-- link with css using relative path -->
+     <!-- external css connection -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
+    <script type="module">
+      import svgIconsbootstrap from 'https://cdn.jsdelivr.net/npm/@svg-icons/bootstrap@1.87.0/+esm'
+      </script>
+    
+    <!-- link with css using absoulte path which is not recommended -->
+    <!-- <link rel="stylesheet" href="C:/Users/sbegam/OneDrive - TNO/Documents/July-Coding-Team/files/day5/css/style.css"> -->
+</head>
+<body>
+  
+
+    <!-- This is the site navigation part. Will add Logo and css -->
+    <nav class="navContainer">
+
+       
+        <img class="siteLogo" src="assets\fashion-logo.png" alt="site Logo" >
+        <a href="">HOME</a>
+      
+        <a href="men.html">MEN</a>
+        <a href="girls.html">GIRLS</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#contact">CONTACT US</a>
+        <a class="dealMenu" href="#deal">TODAY'S DEAL</a>
+
+        <a href="signup.html" style="float: right;margin-right: 5%;">SIGN UP</a>
+        <a href="#" id="loginBtn" style="float: right;margin-right: 5%;">LOG IN</a>
+        
+        
+    </nav>
+
+    <!-- This is the header and site name and info part -->
+    <header id="header" class="nav-bar headerContainer">
+        <img class="headerImg" src="assets\header-images\header-img-1.jpg" alt="Site header image">
+        <h1 class="siteName alignSettings">Fashioniesta</h1>
+        <h3 class="nameInfo alignSettings">Fair price quality clothing</h3>
+  
+    </header>
+
+
+
+
+    <main id="main" class="main-div mainContainer">
+        <div id="home" class="main-child homeContainer">
+            <!-- <h4 class="childTitle">HOME</h4> -->
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 border-bottom">Home</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                  <div class="col d-flex align-items-start">
+                    <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                      <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                    </div>
+                    <div>
+                      <h2>We are</h2>
+                      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                      <a href="#" class="btn btn-primary">
+                        Connect
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                      <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+                    </div>
+                    <div>
+                      <h2>Our Story</h2>
+                      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                      <a href="#" class="btn btn-success">
+                        Learn more
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                      <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+                    </div>
+                    <div>
+                      <h2>Support</h2>
+                      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                      <a href="#" class="btn btn-primary">
+                        Support team
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div id="deal" class="main-child dealContainer">
+            <h4 class="childTitle">TODAY'S DEAL</h4>
+            Deal contents coming here soon
+        </div>
+        <div id="about" class="main-child aboutContainer">
+            <h4 class="childTitle">ABOUT</h4>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nisl purus in. Nunc lobortis mattis aliquam faucibus. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Nunc eget lorem dolor sed viverra ipsum nunc. Nisl pretium fusce id velit ut tortor pretium viverra. Sit amet volutpat consequat mauris nunc. Magna eget est lorem ipsum dolor. </p>
+            <div class="video-container">
+              <video controls>
+                  <source src="/assets/aboutusvideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+            <h3 class="goal">Our Goal is </h3>
+            <h3 class="quoteH3 alignSettings"><q class="quote">Quis eleifend quam adipiscing vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada. </q></h3>
+        </div>
+        <div id="contact" class="main-child contactContainer alignSettings">
+            <h4 class="childTitle">CONTACT US</h4>
+            <form id="formId" class="formSettings" action="" method="">
+                <label for="">Enter your First name</label><br>
+                <input type="text" name="" id="" required><br>
+                <label for="">Enter your Last name</label><br>
+                <input type="text" name="" id="" required><br>
+                <label for="">Enter your Email</label><br>
+                <input type="email" name="" id="" required><br>
+                <label for="">Enter your Phone number</label><br>
+                <input type="text" name="" id=""><br>
+                <label for="">Enter your Sub</label><br>
+                <input type="text" name="" id=""><br>
+                <label for="">Enter your Message</label><br>
+            
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                <!-- <button type="submit">Submit</button> -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+            
+        </div>
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h2>Login</h2>
+              <form>
+                  <label for="username">Username</label>
+                  <input type="text" id="username" placeholder="Enter your username" required>
+  
+                  <label for="password">Password</label>
+                  <input type="password" id="password" placeholder="Enter your password" required>
+  
+                  <button type="submit" class="login-btn">Login</button>
+              </form>
+          </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="foot footContainer">
+    
+        &copy; Copyright <span class="footerHeart">&hearts;</span> TNO July Coding Team 2024. 
+        <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://linkedin.com/ " target="_blank"><i class="bi bi-linkedin"></i></a>
+       
+
+       <br><br>
+         <a class="logoCopyright" href='https://pngtree.com/freepng/vector-hanger-icon_4101459.html'>png image from pngtree.com/</a>
+    </footer>
+
+    <script src="js/login.js"></script>
+  
+    
+</body>
+</html>
